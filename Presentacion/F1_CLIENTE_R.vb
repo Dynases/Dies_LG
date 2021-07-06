@@ -1180,7 +1180,8 @@ Public Class F1_CLIENTE_R
 
     Private Sub tbmarca_ValueChanged(sender As Object, e As EventArgs) Handles cbmarca.ValueChanged
         If cbmarca.SelectedIndex < 0 And cbmarca.Text <> String.Empty Then
-            BtnMarca.Visible = True
+            'BtnMarca.Visible = True
+            BtnMarca.Visible = False
         Else
             BtnMarca.Visible = False
         End If
@@ -1197,7 +1198,8 @@ Public Class F1_CLIENTE_R
 
     Private Sub tbmodelo_ValueChanged(sender As Object, e As EventArgs) Handles cbmodelo.ValueChanged
         If cbmodelo.SelectedIndex < 0 And cbmodelo.Text <> String.Empty Then
-            BtnModelo.Visible = True
+            'BtnModelo.Visible = True
+            BtnModelo.Visible = False
         Else
             BtnModelo.Visible = False
         End If

@@ -896,7 +896,8 @@ Public Class F1_TCGVehiculo
 
     Private Sub tbMarca_ValueChanged(sender As Object, e As EventArgs) Handles tbMarca.ValueChanged
         If tbMarca.SelectedIndex < 0 And tbMarca.Text <> String.Empty Then
-            btMarca.Visible = True
+            'btMarca.Visible = True
+            btMarca.Visible = False
         Else
             btMarca.Visible = False
         End If
@@ -930,7 +931,8 @@ Public Class F1_TCGVehiculo
 
     Private Sub tbModelo_ValueChanged(sender As Object, e As EventArgs) Handles tbModelo.ValueChanged
         If tbModelo.SelectedIndex < 0 And tbModelo.Text <> String.Empty Then
-            btModelo.Visible = True
+            'btModelo.Visible = True
+            btModelo.Visible = False
         Else
             btModelo.Visible = False
         End If

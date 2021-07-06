@@ -586,15 +586,22 @@ Public Class F1_Cliente_L
             tbNombre.BackColor = Color.White
             MEP.SetError(tbNombre, "")
         End If
-        If (tbNSoc.Text.Equals("0") And cbTipoCliente.Value = 2) Then
+        'If (tbNSoc.Text.Equals("0") And cbTipoCliente.Value = 2) Then
+        '    cbTipoCliente.BackColor = Color.Red
+        '    MEP.SetError(cbTipoCliente, "No se puede ingresar tipo de Cliente sin nro de Socio".ToUpper)
+        '    _ok = False
+        'Else
+        '    cbTipoCliente.BackColor = Color.White
+        '    MEP.SetError(cbTipoCliente, "")
+        'End If
+        If cbTipoCliente.Value = 2 Then
             cbTipoCliente.BackColor = Color.Red
-            MEP.SetError(cbTipoCliente, "No se puede ingresar tipo de Cliente sin nro de Socio".ToUpper)
+            MEP.SetError(cbTipoCliente, "No se puede ingresar Cliente de tipo Socio por este módulo".ToUpper)
             _ok = False
         Else
             cbTipoCliente.BackColor = Color.White
             MEP.SetError(cbTipoCliente, "")
         End If
-
         'If tbDir.Text = String.Empty Then
         '    tbDir.BackColor = Color.Red
         '    MEP.SetError(tbDir, "ingrese su Direccion de domicilio o lugar donde vive!".ToUpper)
@@ -1129,7 +1136,8 @@ Public Class F1_Cliente_L
 
     Private Sub cbmarca_ValueChanged(sender As Object, e As EventArgs) Handles cbmarca.ValueChanged
         If cbmarca.SelectedIndex < 0 And cbmarca.Text <> String.Empty Then
-            BtnMarca.Visible = True
+            'BtnMarca.Visible = True
+            BtnMarca.Visible = False
         Else
             BtnMarca.Visible = False
         End If
@@ -1146,7 +1154,8 @@ Public Class F1_Cliente_L
 
     Private Sub cbmodelo_ValueChanged(sender As Object, e As EventArgs) Handles cbmodelo.ValueChanged
         If cbmodelo.SelectedIndex < 0 And cbmodelo.Text <> String.Empty Then
-            BtnModelo.Visible = True
+            'BtnModelo.Visible = True
+            BtnModelo.Visible = False
         Else
             BtnModelo.Visible = False
         End If
@@ -1160,6 +1169,8 @@ Public Class F1_Cliente_L
             cbmodelo.SelectedIndex = CType(cbmodelo.DataSource, DataTable).Rows.Count - 1
         End If
     End Sub
+
+
 
 #End Region
 

@@ -77,8 +77,8 @@ Partial Class F1_CLIENTE_R
         Me.LabelX18 = New DevComponents.DotNetBar.LabelX()
         Me.cbmarca = New Janus.Windows.GridEX.EditControls.MultiColumnCombo()
         Me.LabelX17 = New DevComponents.DotNetBar.LabelX()
-        Me.UsImg = New Presentacion.Us_Image()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.UsImg = New Presentacion.Us_Image()
         CType(Me.SuperTabPrincipal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuperTabPrincipal.SuspendLayout()
         Me.SuperTabControlPanelRegistro.SuspendLayout()
@@ -338,6 +338,7 @@ Partial Class F1_CLIENTE_R
         '
         Me.tbNumi.Border.Class = "TextBoxBorder"
         Me.tbNumi.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.tbNumi.Enabled = False
         Me.tbNumi.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNumi.Location = New System.Drawing.Point(185, 31)
         Me.tbNumi.Name = "tbNumi"
@@ -365,6 +366,7 @@ Partial Class F1_CLIENTE_R
         '
         Me.tbNSoc.Border.Class = "TextBoxBorder"
         Me.tbNSoc.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.tbNSoc.Enabled = False
         Me.tbNSoc.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbNSoc.Location = New System.Drawing.Point(185, 61)
         Me.tbNSoc.Name = "tbNSoc"
@@ -1063,14 +1065,6 @@ Partial Class F1_CLIENTE_R
         Me.LabelX17.TabIndex = 138
         Me.LabelX17.Text = "*MARCA:"
         '
-        'UsImg
-        '
-        Me.UsImg.BackColor = System.Drawing.Color.Transparent
-        Me.UsImg.Location = New System.Drawing.Point(492, 31)
-        Me.UsImg.Name = "UsImg"
-        Me.UsImg.Size = New System.Drawing.Size(194, 170)
-        Me.UsImg.TabIndex = 204
-        '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.GroupPanel1)
@@ -1080,6 +1074,14 @@ Partial Class F1_CLIENTE_R
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(671, 600)
         Me.Panel1.TabIndex = 205
+        '
+        'UsImg
+        '
+        Me.UsImg.BackColor = System.Drawing.Color.Transparent
+        Me.UsImg.Location = New System.Drawing.Point(492, 31)
+        Me.UsImg.Name = "UsImg"
+        Me.UsImg.Size = New System.Drawing.Size(194, 170)
+        Me.UsImg.TabIndex = 204
         '
         'F1_CLIENTE_R
         '
