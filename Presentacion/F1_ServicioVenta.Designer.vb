@@ -2776,9 +2776,9 @@ Partial Class F1_ServicioVenta
         '
         Me.SuperTabControlPanel3.Controls.Add(Me.Panel26)
         Me.SuperTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SuperTabControlPanel3.Location = New System.Drawing.Point(0, 25)
+        Me.SuperTabControlPanel3.Location = New System.Drawing.Point(0, 27)
         Me.SuperTabControlPanel3.Name = "SuperTabControlPanel3"
-        Me.SuperTabControlPanel3.Size = New System.Drawing.Size(455, 353)
+        Me.SuperTabControlPanel3.Size = New System.Drawing.Size(455, 351)
         Me.SuperTabControlPanel3.TabIndex = 1
         Me.SuperTabControlPanel3.TabItem = Me.SuperTabItem3
         '
@@ -2790,7 +2790,7 @@ Partial Class F1_ServicioVenta
         Me.Panel26.Location = New System.Drawing.Point(0, 0)
         Me.Panel26.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(455, 353)
+        Me.Panel26.Size = New System.Drawing.Size(455, 351)
         Me.Panel26.TabIndex = 0
         '
         'pbImgProdu
@@ -2799,7 +2799,7 @@ Partial Class F1_ServicioVenta
         Me.pbImgProdu.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pbImgProdu.Location = New System.Drawing.Point(200, 0)
         Me.pbImgProdu.Name = "pbImgProdu"
-        Me.pbImgProdu.Size = New System.Drawing.Size(255, 353)
+        Me.pbImgProdu.Size = New System.Drawing.Size(255, 351)
         Me.pbImgProdu.TabIndex = 2
         Me.pbImgProdu.TabStop = False
         '
@@ -2810,7 +2810,7 @@ Partial Class F1_ServicioVenta
         Me.panelA.Dock = System.Windows.Forms.DockStyle.Left
         Me.panelA.Location = New System.Drawing.Point(0, 0)
         Me.panelA.Name = "panelA"
-        Me.panelA.Size = New System.Drawing.Size(200, 353)
+        Me.panelA.Size = New System.Drawing.Size(200, 351)
         Me.panelA.TabIndex = 1
         '
         'SuperTabItem3

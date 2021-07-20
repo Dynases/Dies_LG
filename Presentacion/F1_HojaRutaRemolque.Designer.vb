@@ -251,9 +251,6 @@ Partial Class F1_HojaRutaRemolque
         Me.BubbleBarUsuario.MouseOverTabColors.BorderColor = System.Drawing.SystemColors.Highlight
         Me.BubbleBarUsuario.SelectedTabColors.BorderColor = System.Drawing.Color.Black
         '
-        'btnGrabar
-        '
-        '
         'btnModificar
         '
         '
@@ -1244,7 +1241,7 @@ Partial Class F1_HojaRutaRemolque
         Me.tbTotalKilomentraje.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.tbTotalKilomentraje.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbTotalKilomentraje.Increment = 1.0R
-        Me.tbTotalKilomentraje.Location = New System.Drawing.Point(582, 30)
+        Me.tbTotalKilomentraje.Location = New System.Drawing.Point(570, 30)
         Me.tbTotalKilomentraje.Name = "tbTotalKilomentraje"
         Me.tbTotalKilomentraje.Size = New System.Drawing.Size(97, 23)
         Me.tbTotalKilomentraje.TabIndex = 10
@@ -1261,7 +1258,7 @@ Partial Class F1_HojaRutaRemolque
         Me.tbkmEntrada.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.tbkmEntrada.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbkmEntrada.Increment = 1.0R
-        Me.tbkmEntrada.Location = New System.Drawing.Point(582, 4)
+        Me.tbkmEntrada.Location = New System.Drawing.Point(570, 4)
         Me.tbkmEntrada.MinValue = 0R
         Me.tbkmEntrada.Name = "tbkmEntrada"
         Me.tbkmEntrada.Size = New System.Drawing.Size(97, 23)
@@ -1279,7 +1276,7 @@ Partial Class F1_HojaRutaRemolque
         Me.tbkmSalida.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.tbkmSalida.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbkmSalida.Increment = 1.0R
-        Me.tbkmSalida.Location = New System.Drawing.Point(391, 4)
+        Me.tbkmSalida.Location = New System.Drawing.Point(379, 4)
         Me.tbkmSalida.Name = "tbkmSalida"
         Me.tbkmSalida.Size = New System.Drawing.Size(97, 23)
         Me.tbkmSalida.TabIndex = 8

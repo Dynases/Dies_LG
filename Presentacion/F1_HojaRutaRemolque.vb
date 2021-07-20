@@ -648,7 +648,7 @@ Public Class F1_HojaRutaRemolque
         'b.radir ,b.ratelf1 ,MarcaCliente .cedesc1 as MarcaCliente,ModeloCliente .cedesc1 as ModeloCliente
         ',r.rbplac ,a.relugo ,a.relugd,a.retpago ,a.relat ,a.relong ,a.remefec ,a.reobs ,a.refact ,a.rehact ,a.reuact
         listEstCeldas.Add(New Modelos.Celda("renumi", True, "CODIGO VENTA", 120))
-        listEstCeldas.Add(New Modelos.Celda("rencont", True, "N.CONTROL"))
+        listEstCeldas.Add(New Modelos.Celda("rencont", True, "N.CONTROL", 120))
         listEstCeldas.Add(New Modelos.Celda("refdoc", False))
         listEstCeldas.Add(New Modelos.Celda("modelo", False))
         listEstCeldas.Add(New Modelos.Celda("marca", False))
@@ -658,7 +658,7 @@ Public Class F1_HojaRutaRemolque
         listEstCeldas.Add(New Modelos.Celda("rehorsa", False))
         listEstCeldas.Add(New Modelos.Celda("rehoren", False))
         listEstCeldas.Add(New Modelos.Celda("ransoc", False))
-        listEstCeldas.Add(New Modelos.Celda("NombreCliente", True, "CLIENTE", 120))
+        listEstCeldas.Add(New Modelos.Celda("NombreCliente", True, "CLIENTE", 350))
         listEstCeldas.Add(New Modelos.Celda("NombreFactura", False))
         listEstCeldas.Add(New Modelos.Celda("ranit", False))
         listEstCeldas.Add(New Modelos.Celda("radir", False))
@@ -1289,8 +1289,8 @@ Public Class F1_HojaRutaRemolque
                                     SuperTabControl1.SelectedTabIndex = 3
                                 Else
 
-                                    MEP.SetError(tbFechaPago, "Socio esta con deudas atrazas!".ToUpper)
-                                    MHighlighterFocus.UpdateHighlights()
+                                        MEP.SetError(tbFechaPago, "Socio esta con deudas atrasadas!".ToUpper)
+                                        MHighlighterFocus.UpdateHighlights()
                                     tbFechaPago.BackColor = Color.Red
                                     lbUltimaPago.Visible = True
                                     lbUltimaPago.Text = "INHABILITADO"
@@ -1301,8 +1301,8 @@ Public Class F1_HojaRutaRemolque
                                 End If
 
                             Else
-                                MEP.SetError(tbFechaPago, "Socio esta con deudas atrazas!".ToUpper)
-                                MHighlighterFocus.UpdateHighlights()
+                                    MEP.SetError(tbFechaPago, "Socio esta con deudas atrasadas!".ToUpper)
+                                    MHighlighterFocus.UpdateHighlights()
                                 tbFechaPago.BackColor = Color.Red
                                 lbUltimaPago.Visible = True
                                 lbUltimaPago.Text = "INHABILITADO"
@@ -1313,8 +1313,8 @@ Public Class F1_HojaRutaRemolque
                             End If
 
                         Else 'Si el socio no hizo ningun pago
-                            MEP.SetError(tbFechaPago, "Socio esta con deudas atrazas!".ToUpper)
-                            MHighlighterFocus.UpdateHighlights()
+                                MEP.SetError(tbFechaPago, "Socio esta con deudas atrasadas!".ToUpper)
+                                MHighlighterFocus.UpdateHighlights()
                             tbFechaPago.BackColor = Color.Red
                             tbFechaPago.Text = "Sin Ningun Pago"
                             lbUltimaPago.Visible = True
@@ -1354,12 +1354,6 @@ Public Class F1_HojaRutaRemolque
 
     End Sub
 #End Region
-
-    Private Sub grDetalle_FormattingRow(sender As Object, e As RowLoadEventArgs)
-
-
-    End Sub
-
 
 
     Private Sub Gmc_Cliente_DoubleClick(sender As Object, e As EventArgs) Handles Gmc_Cliente.DoubleClick
@@ -2065,9 +2059,7 @@ Public Class F1_HojaRutaRemolque
         sTiempo = Tiempo
     End Function
 
-    Private Sub tbTiempoUtilizado_Click(sender As Object, e As EventArgs) Handles tbTiempoUtilizado.Click
 
-    End Sub
 
     Private Sub tbHoraSalida_ValueChanged(sender As Object, e As EventArgs) Handles tbHoraSalida.ValueChanged
         Dim salida As DateTime = tbHoraSalida.Value
@@ -2075,15 +2067,7 @@ Public Class F1_HojaRutaRemolque
         tbTiempoUtilizado.Value = sTiempo(salida, entrada)
     End Sub
 
-    Private Sub btnGrabar_Click(sender As Object, e As EventArgs) Handles btnGrabar.Click
 
-    End Sub
 
-    Private Sub grVentasPendientes_FormattingRow(sender As Object, e As RowLoadEventArgs) Handles grVentasPendientes.FormattingRow
 
-    End Sub
-
-    Private Sub tbChofer_TextChanged(sender As Object, e As EventArgs) Handles tbChofer.TextChanged
-
-    End Sub
 End Class
